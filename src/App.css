@@ -1,0 +1,221 @@
+:root
+{
+    --primary-color:#19ACFF;
+    --secondary-color:#F5FFFF;
+    --terciary-color:#C4EAFF;
+}
+
+body
+{
+    margin: 0;
+    font-size: .7rem;
+}
+
+#root
+{
+    background-color: #004a72;
+}
+
+p
+{
+    padding: 0;
+    margin: 0;
+}
+
+.display-div
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-div
+{
+    width: 100%;
+    max-width: 1920px;
+}
+
+*
+{
+    color: var(--secondary-color);
+}
+
+.div-navigator
+{
+    background-color: var(--primary-color);
+}
+
+.principal-info
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dates
+{
+    display: flex;
+    margin: 0.9vh;
+    flex-wrap: wrap;
+    margin-left: 5vh;
+}
+
+.social-networks-container
+{
+    display: flex;
+    margin-right: 10vh;
+    flex-wrap: wrap;
+}
+
+.social-networks a
+{
+    text-decoration: none;
+}
+
+.navBar
+{
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: center;
+    padding: 1vh;
+}
+
+.container-energy-solar
+{
+    background: url("./sources/energy-solar.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 86.9vh;
+}
+
+.benefisits
+{
+    background-color: var(--terciary-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+}
+
+.benefisits h1
+{
+    color: var(--primary-color);
+}
+
+.div-container
+{
+    background-image: url("./sources/energy-solar-phrase.jpg");
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 102vh;
+}
+
+.container-phrase
+{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 45px;
+    background-color: rgba(63, 63, 63, 0.5);
+    width: 100%;
+    height: 102vh;
+}
+
+.container-phrase p
+{
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10vh;
+    line-height: 1;
+    width: 50%;
+}
+
+.container-phrase p b
+{
+    color: #8bd4ff;
+}
+
+.container-title
+{
+    margin-bottom: 10vh;
+    color: var(--primary-color);
+}
+
+.products
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--terciary-color);
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+}
+
+.products .title h1
+{
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 10vh;
+}
+
+.link
+{
+    display: flex;
+    justify-content: center;
+}
+
+.link-container
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.link-container a.more-link
+{
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    background-color: #90b0bf;
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+a.more-link:hover
+{
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+a.more-link
+{
+    background-color: rgba(255, 255, 255, 0.35);
+    display: inline-block;
+    padding: 12px 18px;
+    color: #fff;
+    text-decoration: none;
+    font: 500 15px 'Work Sans', Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    border: none !important;
+    position: relative;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: .1s all ease-in-out;
+}
+
+.banners-container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

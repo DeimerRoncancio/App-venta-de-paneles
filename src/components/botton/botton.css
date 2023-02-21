@@ -1,0 +1,19 @@
+.botton
+{
+    padding:1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border-radius: 50%;
+}
+
+.imgBotton
+{
+    width:4vh;
+    height: 4vh;
+}
+
+.botton:hover
+{
+    background-color: #6ECBFF;
+    cursor:pointer;
+}

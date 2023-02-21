@@ -1,0 +1,132 @@
+.responsive-banner
+{
+    display: inline-block;
+    margin: 50px;
+    max-width: 490px;
+    min-width: 320px;
+    position: relative;
+    min-height: 300px;
+    max-height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #81004b, #230752);
+    background-repeat: no-repeat;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.container-envelope {
+    max-width: calc(100%);
+    padding: 15px;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 300px;
+    max-height: 450px;
+}
+
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-self: flex-end;
+}
+
+@media (min-width: 650px)
+{
+    .col-xs-12
+    {
+        align-self: center;
+    }
+
+    .container-envelope
+    {
+        max-width: calc(100% - 200px);
+    }
+}
+
+.banners p
+{
+    clear: both;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    line-height: 1.15;
+    word-wrap: break-word;
+    margin: 1em 0 0.5em;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    word-wrap: break-word;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banners
+{
+    box-sizing: border-box;
+}
+
+
+.floating-elements
+{
+    fill: rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.banners img {
+    max-width : 50%;
+}
+
+.cirle-a
+{
+    bottom: -80px;
+    left: -80px;
+}
+
+.cirle-b
+{
+    top: -30px;
+    right: 70%;
+}
+
+.cirle-c
+{
+    top: -330px;
+    right: -300px;
+    background-image: url();
+    background-repeat: no-repeat;
+}
+
+.cirle-d
+{
+    top: 195px;
+    right: 145px;
+}
+
+.banners img
+{
+    top: 0;
+    right: 0;
+}
+
+.banners
+{
+    text-align: center;
+}
+
+.banners button, input, select, textarea
+{
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    color: #90b0bf;
+}
+
+.banners h1
+{
+    text-align: center;
+    margin: 30px 15px;
+}

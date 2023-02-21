@@ -1,0 +1,21 @@
+.information-container
+{
+    display: flex;
+    font-weight:400;
+    align-items: center;
+    font-size: .85rem;
+    margin-right: 1vh;
+    text-decoration: none;
+}
+
+.icon
+{
+    width: 3vh;
+    margin-right: 1vh;
+}
+
+.information-container p
+{
+    margin-right: 1vh;
+    margin-bottom: 0;
+}
