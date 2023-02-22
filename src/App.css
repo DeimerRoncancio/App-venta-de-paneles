@@ -40,6 +40,11 @@ p
     color: var(--secondary-color);
 }
 
+.presentation-container
+{
+    height: 100vh;
+}
+
 .div-navigator
 {
     background-color: var(--primary-color);
@@ -59,16 +64,11 @@ p
     margin-left: 5vh;
 }
 
-.social-networks-container
+.social-networks
 {
     display: flex;
-    margin-right: 10vh;
+    margin-right: 5vh;
     flex-wrap: wrap;
-}
-
-.social-networks a
-{
-    text-decoration: none;
 }
 
 .navBar
@@ -85,7 +85,7 @@ p
     background-size: cover;
     background-position: center top;
     width: 100%;
-    height: 86.9vh;
+    height: 100%;
 }
 
 .benefisits

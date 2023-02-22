@@ -10,52 +10,54 @@ function App() {
   return (
     <div className="display-div">
         <div className="main-div">
-            <nav>
-                <div className="div-navigator">
-                    <div className="principal-info">
-                        <div className="dates">
-                            <Information 
-                                link = ''
-                                icon = 'telefono'
-                                date = "+57 3106261499"
-                            />
-                            <Information 
-                                link = 'https://www.google.com/maps/place/Villavicencio,+Meta/@4.1249257,-73.6791014,23570m/data=!3m2!1e3!4b1!4m5!3m4!1s0x8e3e2ddfba283211:0x537e40041d7b20c2!8m2!3d4.1491793!4d-73.6285472'
-                                icon = "ubicacion"
-                                date = "Villavicencio / Meta"
-                            />
-                        </div>
-                        <div className="principal-info">
-                                <Information
-                                    link = 'https://www.facebook.com'
-                                    icon = 'facebook'
-                                    date = 'Facebook'
+            <section id="presentation-section">
+                <div className='presentation-container'>
+                    <nav>
+                        <div className="div-navigator">
+                            <div className="principal-info">
+                                <div className="dates">
+                                    <Information 
+                                        link = ''
+                                        icon = 'telefono'
+                                        date = "+57 3106261499"
+                                    />
+                                    <Information 
+                                        link = 'https://www.google.com/maps/place/Villavicencio,+Meta/@4.1249257,-73.6791014,23570m/data=!3m2!1e3!4b1!4m5!3m4!1s0x8e3e2ddfba283211:0x537e40041d7b20c2!8m2!3d4.1491793!4d-73.6285472'
+                                        icon = "ubicacion"
+                                        date = "Villavicencio / Meta"
+                                    />
+                                </div>
+                                <div className="social-networks">
+                                        <Information
+                                            link = 'https://www.facebook.com'
+                                            icon = 'facebook'
+                                            date = 'Facebook'
+                                        />
+                                        <Information
+                                            link = 'https://www.youtube.com'
+                                            icon = 'youtube'
+                                            date = 'Youtube'
+                                        />
+                                </div>
+                            </div>
+                            <div className="navBar">
+                                <Botton 
+                                    imageBotton = 'inicio'
                                 />
-                                <Information
-                                    link = 'https://www.youtube.com'
-                                    icon = 'youtube'
-                                    date = 'Youtube'
+                                <Botton 
+                                    imageBotton = 'productos'
                                 />
+                                <Botton 
+                                    imageBotton = 'servicios'
+                                />
+                                <Botton 
+                                    imageBotton = 'contactenos'
+                                />
+                            </div>
                         </div>
-                    </div>
-                     <div className="navBar">
-                        <Botton 
-                            imageBotton = 'inicio'
-                        />
-                        <Botton 
-                            imageBotton = 'productos'
-                        />
-                        <Botton 
-                            imageBotton = 'servicios'
-                        />
-                        <Botton 
-                            imageBotton = 'contactenos'
-                        />
-                    </div>
+                    </nav>
+                    <div className="container-energy-solar"></div>
                 </div>
-            </nav>
-            <section id="image-section">
-                <div className="container-energy-solar"></div>
             </section>
             <section id="benefisit-section">
                 <div className='benefisits d-flex'>
