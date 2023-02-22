@@ -4,6 +4,7 @@ import { Information } from './components/information/Information';
 import { Banner } from './components/banner/Banner';
 import { Card } from './components/cards/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ImagePhrase } from './components/image-phrase/ImagePhrase';
 
 function App() {
   return (
@@ -53,50 +54,60 @@ function App() {
                     </div>
                 </div>
             </nav>
-            <div className="container-energy-solar"></div>
-            <div className='benefisits d-flex'>
-                <div className='container-title content d-flex'>
-                    <h1>BENEFICIOS</h1>
-                </div>
-                <div className='container d-flex'>
-                    <Card
-                        title = "1. Una fuente renovable e inagotable por definición"
-                        text = "Es cierto, la estrella amarilla que da nombre al sistema solar no vivirá eternamente, en 4000 o 5000 millones de años saldrá de su secuencia principal y se volverá inestable. Sin embargo, mientras tanto, en las escalas temporales de nuestro interés, el sol representa una fuente de energía inmutable y, de hecho, inagotable: día tras día, año tras año, está y estará siempre allí, igual a sí mismo."
-                        imageCard = "benefisit-img1"
-                    />
-                    <Card
-                        title = "2. El sol llega a todas partes"
-                        text = "Es cierto, la estrella amarilla que da nombre al sistema solar no vivirá eternamente, en 4000 o 5000 millones de años saldrá de su secuencia principal y se volverá inestable. Sin embargo, mientras tanto, en las escalas temporales de nuestro interés, el sol representa una fuente de energía inmutable y, de hecho, inagotable: día tras día, año tras año, está y estará siempre allí, igual a sí mismo."
-                        imageCard = "benefisit-img2"
-                    />
-                    <Card
-                        title = "3. Se combina muy bien con las baterías y la red eléctrica"
-                        text = "Las plantas fotovoltaicas producen energía sobre todo en las horas centrales del día, pero gracias a sistemas de almacenamiento más eficientes, con mayor capacidad y fiabilidad, se pueden gestionar mejor las diferencias entre la demanda energética y la oferta natural del sol."
-                        imageCard = "benefisit-img3"
-                    />
-                </div>
-            </div>
-            <div className='div-container'>
-                <div className='container-phrase'>
-                    <p >"<b>Elon musk una vez dijo, comprare Twitter</b>, dicho y hecho, ahora es dueño de esa madre :V."</p>
-                </div>
-            </div>
-            <div className="products">
-                <div className='title'>
-                    <h1>PRODUCTOS</h1>
-                </div>
-                <div className='banners-container'>
-                    <Banner/>
-                    <Banner/>
-                    <Banner/>
-                </div>
-                <div className='link'>
-                    <div class="link-container">
-                        <a target="_blank" href="https://www.solit.com.co/" class="more-link">Visita nuestro
-                        Website y encuentra la solución que necesita</a>
+            <section id="image-section">
+                <div className="container-energy-solar"></div>
+            </section>
+            <section id="benefisit-section">
+                <div className='benefisits d-flex'>
+                    <div className='container-title content d-flex'>
+                        <h1>BENEFICIOS</h1>
+                    </div>
+                    <div className='container d-flex'>
+                        <Card
+                            title = "1. Una fuente renovable e inagotable por definición"
+                            text = "Es cierto, la estrella amarilla que da nombre al sistema solar no vivirá eternamente, en 4000 o 5000 millones de años saldrá de su secuencia principal y se volverá inestable. Sin embargo, mientras tanto, en las escalas temporales de nuestro interés, el sol representa una fuente de energía inmutable y, de hecho, inagotable: día tras día, año tras año, está y estará siempre allí, igual a sí mismo."
+                            imageCard = "benefisit-img1"
+                        />
+                        <Card
+                            title = "2. El sol llega a todas partes"
+                            text = "Es cierto, la estrella amarilla que da nombre al sistema solar no vivirá eternamente, en 4000 o 5000 millones de años saldrá de su secuencia principal y se volverá inestable. Sin embargo, mientras tanto, en las escalas temporales de nuestro interés, el sol representa una fuente de energía inmutable y, de hecho, inagotable: día tras día, año tras año, está y estará siempre allí, igual a sí mismo."
+                            imageCard = "benefisit-img2"
+                        />
+                        <Card
+                            title = "3. Se combina muy bien con las baterías y la red eléctrica"
+                            text = "Las plantas fotovoltaicas producen energía sobre todo en las horas centrales del día, pero gracias a sistemas de almacenamiento más eficientes, con mayor capacidad y fiabilidad, se pueden gestionar mejor las diferencias entre la demanda energética y la oferta natural del sol."
+                            imageCard = "benefisit-img3"
+                        />
                     </div>
                 </div>
-            </div>
+            </section>
+            <section id="inmage-phrase-section">
+                <div>
+                    <ImagePhrase 
+                        textBlue = 'Elon musk una vez dijo, comprare Twitter'
+                        text = ', dicho y hecho, ahora es dueño de esa madre :V.'
+                    />
+                </div>
+            </section>
+            <section id="products-section">
+                <div className="products">
+                    <div className='title'>
+                        <h1>PRODUCTOS</h1>
+                    </div>
+                    <div className='banners-container'>
+                        <Banner/>
+                        <Banner/>
+                        <Banner/>
+                    </div>
+                    <div className='link'>
+                        <div class="link-container">
+                            <a target="_blank" href="https://www.solit.com.co/" class="more-link">Visita nuestro
+                            Website y encuentra la solución que necesita</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </div>
     </div>
   );
