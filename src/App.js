@@ -64,7 +64,7 @@ function App() {
                     <div className='container-title content d-flex'>
                         <h1>BENEFICIOS</h1>
                     </div>
-                    <div className='container d-flex'>
+                    <div className='cards'>
                         <Card
                             title = "1. Una fuente renovable e inagotable por definición"
                             text = "Es cierto, la estrella amarilla que da nombre al sistema solar no vivirá eternamente, en 4000 o 5000 millones de años saldrá de su secuencia principal y se volverá inestable. Sin embargo, mientras tanto, en las escalas temporales de nuestro interés, el sol representa una fuente de energía inmutable y, de hecho, inagotable: día tras día, año tras año, está y estará siempre allí, igual a sí mismo."
@@ -109,7 +109,6 @@ function App() {
                     </div>
                 </div>
             </section>
-            
         </div>
     </div>
   );

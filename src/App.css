@@ -1,19 +1,16 @@
 :root
 {
-    --primary-color:#19ACFF;
-    --secondary-color:#F5FFFF;
-    --terciary-color:#C4EAFF;
+    --principal-color:#93C700;
+    --bright-green:#b8fa01;
+    --green-dark:#597901;
+    --green-white:#f5fff8;
+    --green-clear:#b8da5d;
+    --black-green:#2a3a00;
 }
 
 body
 {
-    margin: 0;
-    font-size: .7rem;
-}
-
-#root
-{
-    background-color: #004a72;
+    font-size: 16px !important;
 }
 
 p
@@ -26,18 +23,16 @@ p
 {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .main-div
 {
     width: 100%;
-    max-width: 1920px;
 }
 
 *
 {
-    color: var(--secondary-color);
+    color: var(--green-white);
 }
 
 .presentation-container
@@ -47,13 +42,14 @@ p
 
 .div-navigator
 {
-    background-color: var(--primary-color);
+    background-color: var(--principal-color);
 }
 
 .principal-info
 {
     display: flex;
     justify-content: space-between;
+    background-color:var(--green-dark);
 }
 
 .dates
@@ -74,7 +70,6 @@ p
 .navBar
 {
     display: flex;
-    background-color: var(--primary-color);
     justify-content: center;
     padding: 1vh;
 }
@@ -84,13 +79,12 @@ p
     background: url("./sources/energy-solar.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center top;
-    width: 100%;
     height: 100%;
 }
 
 .benefisits
 {
-    background-color: var(--terciary-color);
+    background-color: var(--green-white);
     flex-direction: column;
     align-items: center;
     padding: 10vh;
@@ -98,18 +92,20 @@ p
 
 .benefisits h1
 {
-    color: var(--primary-color);
-}
-
-.container-phrase p b
-{
-    color: #8bd4ff;
+    color: var(--principal-color);
 }
 
 .container-title
 {
     margin-bottom: 10vh;
-    color: var(--primary-color);
+    color: var(--principal-color);
+}
+
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(3,60vh);
+    grid-template-rows:1fr;
 }
 
 .products
@@ -117,7 +113,7 @@ p
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--terciary-color);
+    background-color: var(--green-white);
 }
 
 .title
@@ -129,7 +125,7 @@ p
 .products .title h1
 {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--principal-color);
     margin-top: 10vh;
 }
 

@@ -1,9 +1,15 @@
+.botton-container
+{
+    display: flex;
+}
+
 .botton
 {
     padding:1vh;
     margin-left: 1vh;
     margin-right: 1vh;
     border-radius: 50%;
+    transition: all .3s ease;
 }
 
 .imgBotton
@@ -14,6 +20,6 @@
 
 .botton:hover
 {
-    background-color: #6ECBFF;
+    background-color: var(--green-clear);
     cursor:pointer;
 }

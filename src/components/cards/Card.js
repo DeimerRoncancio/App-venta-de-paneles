@@ -4,7 +4,7 @@ export function Card(props)
 {
     return(
         <div className="container container-card">
-            <div className="card rounded-0">
+            <div className="card rounded-0 card-item">
                 <div className='overflow'>
                     <img src={require(`../../sources/${props.imageCard}.jpg`)} />
                 </div>

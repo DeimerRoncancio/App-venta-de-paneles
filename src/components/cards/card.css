@@ -1,26 +1,19 @@
-:root
-{
-    --primary-color:#19ACFF;
-    --secondary-color:#F5FFFF;
-    --terciary-color:#C4EAFF;
-
-}
-
 .card-body
 {
-    background-color:#1889ca;
+    background-color:var(--green-dark);
     transition: all .5s;
 }
 
 .card
 {
-    background-color: var(--primary-color) !important;
+    background-color: var(--bright-green) !important;
     transition: all .5s;
+    height: 100% !important;
 }
 
 .card:hover
 {
-    box-shadow: 5px 5px 10px 1px #093853;
+    box-shadow: 5px 5px 10px 1px var(--black-green);
 }
 
 .card img
