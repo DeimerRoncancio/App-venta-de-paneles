@@ -6,11 +6,11 @@ export function ImagePhrase(props)
     {
         let animation = document.querySelector(".text");
         let topObject = animation.getBoundingClientRect().top;
-        let windowSize = window.innerHeight/1;
+        let windowSize = window.innerHeight/0.9;
         
         if(topObject <= windowSize)
         {
-            animation.style.animation = "anim 1s ease-in-out";
+            animation.style.animation = "aparecer 1.5s forwards cubic-bezier(0.46, 0.42, 0, 0.96)";
         }
     });
 

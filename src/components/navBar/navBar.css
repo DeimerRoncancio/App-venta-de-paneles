@@ -1,0 +1,51 @@
+.div-navigator
+{
+    background-color: var(--gray-color);
+}
+
+.principal-info
+{
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--principal-color);
+}
+
+.dates
+{
+    display: flex;
+    margin: 0.9vh;
+    flex-wrap: wrap;
+    margin-left: 5vh;
+}
+
+.social-networks
+{
+    display: flex;
+    margin-right: 5vh;
+    flex-wrap: wrap;
+}
+
+.navBar
+{
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+}
+
+.navBar .logo-container
+{
+    width: 0;
+    height: 6vh;
+}
+
+.navBar .logo-container img
+{
+    margin-left: 5vh;
+   height: 6vh;
+}
+
+.link-menu
+{
+    display: flex;
+    margin: auto;
+}

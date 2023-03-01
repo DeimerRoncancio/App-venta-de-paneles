@@ -4,16 +4,21 @@
     transition: all .5s;
 }
 
+.container-card
+{
+    margin-bottom: 5vh;
+}
+
 .card
 {
-    background-color: var(--bright-green) !important;
+    background-color: #3837389f !important;
     transition: all .5s;
     height: 100% !important;
 }
 
 .card:hover
 {
-    box-shadow: 5px 5px 10px 1px var(--black-green);
+    box-shadow: 5px 5px 10px 1px var(--gray-color);
 }
 
 .card img
@@ -27,7 +32,7 @@
     overflow: hidden;
 }
 
-.card img:hover
+.overflow img:hover
 {
     transform: scale(1.2);
 }

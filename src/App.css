@@ -1,11 +1,11 @@
 :root
 {
-    --principal-color:#93C700;
-    --bright-green:#b8fa01;
+    --principal-color:#90c401;
     --green-dark:#597901;
     --green-white:#f5fff8;
     --green-clear:#b8da5d;
     --black-green:#2a3a00;
+    --gray-color:#33383b;
 }
 
 body
@@ -23,10 +23,17 @@ p
 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .main-div
 {
+    width: 100%;
+}
+
+.main-div nav
+{
+    position: absolute;
     width: 100%;
 }
 
@@ -40,40 +47,6 @@ p
     height: 100vh;
 }
 
-.div-navigator
-{
-    background-color: var(--principal-color);
-}
-
-.principal-info
-{
-    display: flex;
-    justify-content: space-between;
-    background-color:var(--green-dark);
-}
-
-.dates
-{
-    display: flex;
-    margin: 0.9vh;
-    flex-wrap: wrap;
-    margin-left: 5vh;
-}
-
-.social-networks
-{
-    display: flex;
-    margin-right: 5vh;
-    flex-wrap: wrap;
-}
-
-.navBar
-{
-    display: flex;
-    justify-content: center;
-    padding: 1vh;
-}
-
 .container-energy-solar
 {
     background: url("./sources/energy-solar.jpg") no-repeat fixed;
@@ -85,8 +58,9 @@ p
 .benefisits
 {
     background-color: var(--green-white);
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 10vh;
 }
 
@@ -104,8 +78,16 @@ p
 .cards
 {
     display: grid;
-    grid-template-columns: repeat(3,60vh);
+    grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
     grid-template-rows:1fr;
+}
+
+.container-products
+{
+    background: url("./sources/products.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
 }
 
 .products
@@ -126,7 +108,8 @@ p
 {
     text-align: center;
     color: var(--principal-color);
-    margin-top: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 3.5rem;
 }
 
 .link
@@ -138,7 +121,8 @@ p
 .link-container
 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 110px;
 }
 
 .link-container a.more-link
@@ -156,9 +140,21 @@ p
     letter-spacing: 1px;
 }
 
+.link-container a.link
+{
+    background-color: var(--green-clear);
+}
+
+.link-container a.link:hover
+{
+    background-color: var(--green-dark);
+    color: var(--green-white);
+}
+
 a.more-link:hover
 {
     background-color: rgba(255, 255, 255, 0.50);
+    color: #33383b;
 }
 
 a.more-link
