@@ -22,7 +22,7 @@ export function Banner({primaryColor,secundaryColor,image,text})
             >
                 <div className='container-circle'>
                     <div className='aux-container'>
-                        <img src={require(`../../sources/${image}.jpg`)} />
+                        <img src={require(`../../sources/${image}`)} />
                     </div>
                 </div>
                 <div className="container-envelope">

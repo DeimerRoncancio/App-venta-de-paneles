@@ -57,7 +57,7 @@ export default function NavBar()
                                     imageBotton = 'servicios'
                                 />
                             </Link>
-                            <Link to="/">
+                            <Link to="/contact">
                                 <Botton 
                                     imageBotton = 'contactenos'
                                 />

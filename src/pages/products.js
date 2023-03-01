@@ -14,78 +14,28 @@ export function Products()
                     <div className='title'>
                         <h1>PRODUCTOS</h1>
                     </div>
+                    <h2>Paneles Solares</h2>
                     <div className='banners-container'>
                         <Banner 
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'producto'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
+                            primaryColor="#038ED8"
+                            secundaryColor='#033b5a'
+                            image = 'paneles-solares-trina.png'
+                            text= 'Paneles solares Trina Solar'
                         />
                         <Banner
-                            primaryColor="red"
-                            secundaryColor='blue'
-                            image = 'benefisit-img2'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
+                            primaryColor="#E60012"
+                            secundaryColor='#580108'
+                            image = 'paneles-solares-longi.png'
+                            text= 'Paneles Solares Longi'
                         />
+                    </div>
+                    <h2>Inversores</h2>
+                    <div className='banners-container'>
                         <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img1'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img3'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img1'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img1'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img2'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img1'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img2'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img1'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img1'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
-                        />
-                        <Banner
-                            primaryColor="#007881"
-                            secundaryColor='#002c23'
-                            image = 'benefisit-img3'
-                            text= 'Visita nuestro Website y encuentre la solución que necesita'
+                            primaryColor="#6EB92B"
+                            secundaryColor='#233a0e'
+                            image = 'inversores-growatt.png'
+                            text= 'Inversores Growatt'
                         />
                     </div>
                     <div className='link'>

@@ -1,12 +1,13 @@
 .responsive-banner
 {
     display: inline-block;
+    /* background-color: #580108; */
     margin: 50px;
-    max-width: 490px;
-    min-width: 320px;
+    width: 490px;
+    /* min-width: 320px; */
     position: relative;
-    min-height: 300px;
-    max-height: 450px;
+    height: 300px;
+    /* max-height: 450px; */
     border-radius: 10px;
     overflow: hidden;
     background-repeat: no-repeat;
