@@ -1,12 +1,12 @@
 :root
 {
-    --principal-color:#90c401;
+    --principal-color:#6d9401;
     --green-dark:#597901;
     --green-white:#f5fff8;
     --green-clear:#b8da5d;
     --black-green:#2a3a00;
     --gray-color:#33383b;
-    --color:#233a0e;
+    --gray-clear:#dadada;
 }
 
 body
@@ -31,17 +31,6 @@ p
 {
     width: 100%;
     background-color: var(--green-white);
-}
-
-.main-div nav
-{
-    position: absolute;
-    width: 100%;
-}
-
-*
-{
-    color: var(--green-white);
 }
 
 .presentation-container
@@ -86,14 +75,68 @@ p
 
 .container-products
 {
+    display: flex;
     background: url("./sources/products.jpg") no-repeat fixed;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center top;
     height: 100%;
 }
 
+.all-products
+{
+    display: flex;
+}
+
+.names-menu
+{
+    position: sticky;
+    top: 0;
+    padding-top: 15vh;
+    margin-right: 5vh;
+    width: 35vh;
+    height: 100vh;
+}
+
+.names-menu ul
+{
+    padding-left: 1.7em;
+}
+
+.names-menu a
+{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 4vh;
+}
+
+.names-menu a svg
+{
+    opacity: 0;
+    color: var(--principal-color);
+}
+
+.names-menu a:hover svg
+{
+    opacity: 1;
+} 
+
+.names-menu p:hover
+{
+    color: var(--principal-color);
+}
+
+.names-menu p
+{
+    color: var(--gray-color);
+    margin-bottom: 0;
+}
+
 .products
 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -102,24 +145,52 @@ p
 
 .title
 {
+    backdrop-filter: blur(5px);
+    background-color: rbga(243,243,243,.2);
+    padding: 5vh;
+    width: 50%;
+    height: 40%;
+    margin-bottom:15vh;
+    border-radius: 5vh;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
-.products .title h1
+.sub-title
 {
+    display: flex;
+    border-bottom: 2px solid var(--principal-color);
+}
+
+.title h1
+{
+    font-size: 4em;
     text-align: center;
-    color: var(--principal-color);
-    margin-top: 20vh;
-    margin-bottom: 3.5rem;
+    color: var(--green-clear);
+}
+
+.title p
+{
+    font-size: 1em;
+    color: var(--green-white);
 }
 
 .products h2
 {
-    text-align: center;
+    text-align:start;
     color: var(--principal-color);
-    margin-top: 20vh;
-    margin-bottom: 3.5rem;
+    margin-left:8vh;
+    margin-top:8vh;
+    margin-bottom:4vh;
+}
+
+.products h4
+{
+    color: var(--principal-color);
+    margin-left:8vh;
 }
 
 .link
@@ -187,7 +258,7 @@ a.more-link
 .banners-container
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -279,3 +350,50 @@ a.more-link
         font-size: 12px;
     }
 }
+
+.container-services
+{
+    background: url("./sources/services.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+}
+/* Estilos para la sección de información */
+.info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para el contenedor de la imagen */
+  .info-left {
+    flex: 0 0 50%;
+  }
+  
+  /* Estilos para la imagen */
+  .info-left img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Estilos para el contenedor de texto */
+  .info-right {
+    flex: 0 0 50%;
+    padding: 20px;
+  }
+  
+  /* Estilos para el título de la sección */
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #33383b;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el texto de la sección */
+  .section-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+  }

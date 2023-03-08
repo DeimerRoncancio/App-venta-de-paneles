@@ -1,11 +1,11 @@
 import './botton.css';
 
-export function Botton(props)
+export function Botton({imageBotton,changeStyle})
 {
     return(
         <div className='botton-container'>
             <botton className="botton">
-                <img className="imgBotton" src={require(`../../sources/${props.imageBotton}.png`)}/>
+                <img className="imgBotton" src={require(`../../sources/${imageBotton}.png`)}/>
             </botton>
         </div>
     )

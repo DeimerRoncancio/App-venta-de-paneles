@@ -9,6 +9,7 @@
     align-items: center;
     font-size: 0.84em;
     margin-right: 0.5vh;
+    color: var(--green-white);
     margin-left: 0.5vh;
     text-decoration: none;
 }

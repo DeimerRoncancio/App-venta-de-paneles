@@ -1,18 +1,20 @@
 .responsive-banner
 {
     display: inline-block;
-    /* background-color: #580108; */
-    margin: 50px;
-    width: 490px;
-    /* min-width: 320px; */
+    margin: 20px;
+    min-width: 490px;
     position: relative;
-    height: 300px;
-    /* max-height: 450px; */
-    border-radius: 10px;
+    max-height: 300px;
+    border-radius: 35px;
     overflow: hidden;
     background-repeat: no-repeat;
     text-align: left;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all .5s;
+}
+
+.responsive-banner:hover
+{
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.493);
 }
 
 .container-envelope {
@@ -23,8 +25,15 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
     min-height: 300px;
     max-height: 450px;
+}
+
+.icons
+{
+    width: 5em;
+    margin-bottom: 1vh;
 }
 
 .col-xs-12 {
@@ -37,12 +46,12 @@
 {
     .col-xs-12
     {
-        align-self: center;
+        align-self: start;
     }
 
     .container-envelope
     {
-        max-width: calc(100% - 200px);
+        max-width: calc(100% - 237px);
     }
 }
 
@@ -61,9 +70,15 @@
     color: #fff;
     position: relative;
     word-wrap: break-word;
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 1em;
     margin-bottom: 20px;
+}
+
+.banners h4
+{
+    margin-left: 0;
+    color: var(--green-white);
+    border-bottom: 0px;
 }
 
 .banners

@@ -1,5 +1,6 @@
 .footer-distributed {
     background-color: #2d2a30;
+    color: var(--green-white);
     box-sizing: border-box;
     width: 100%;
     text-align: left;

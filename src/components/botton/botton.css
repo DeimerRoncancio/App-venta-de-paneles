@@ -20,6 +20,6 @@
 
 .botton:hover
 {
-    background-color: var(--green-clear);
+    background-color: var(--gray-clear);
     cursor:pointer;
 }

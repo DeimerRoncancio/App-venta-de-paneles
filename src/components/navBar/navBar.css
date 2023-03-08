@@ -1,12 +1,16 @@
-.div-navigator
+.main-div nav
 {
-    background-color: var(--gray-color);
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    transition: all .5s;
 }
 
 .principal-info
 {
     display: flex;
     justify-content: space-between;
+    color: var(--green-white);
     background-color:var(--principal-color);
 }
 
@@ -27,9 +31,18 @@
 
 .navBar
 {
+    position: sticky;
+    background-color: var(--green-white);
     display: flex;
     align-items: center;
+    padding: 2vh;
+    transition: all .5s;
+}
+
+.navBarIsDown
+{
     padding: 1vh;
+    background-color: var(--principal-color);
 }
 
 .navBar .logo-container

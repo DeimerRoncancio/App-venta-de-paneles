@@ -1,6 +1,7 @@
 .card-body
 {
     background-color:var(--green-dark);
+    color: var(--green-white);
     transition: all .5s;
 }
 
