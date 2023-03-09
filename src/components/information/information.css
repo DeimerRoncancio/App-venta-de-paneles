@@ -3,6 +3,11 @@
     display: flex;
 }
 
+.information-container a:hover
+{
+    color: var(--green-white) !important;
+}
+
 .information
 {
     display: flex;

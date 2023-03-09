@@ -6,7 +6,12 @@ export function Contact()
         <div className="contact">
             <section id="presentation-section">
                 <div className='presentation-container'>
-                    <div className="container-contact"></div>
+                    <div className="container-contact">
+                        <div className='title'>
+                            <h1>CONTACT</h1>
+                            <p>"¡Nos encanta conectarnos con nuestros clientes! En esta página de contacto, encontrarás todas las formas de comunicarte con nosotros para hacer preguntas, dejar comentarios o simplemente saludarnos. ¡Estamos aquí para ayudarte en lo que necesites!</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <header>

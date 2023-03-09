@@ -10,13 +10,18 @@ export function Home()
         <div>
             <section id="presentation-section">
                 <div className='presentation-container'>
-                    <div className="container-energy-solar"></div>
+                    <div className="container-energy-solar">
+                        <div className='title'>
+                            <img src={require(`../sources/logo-solit.png`)}/>
+                            <p>Únete a la energía del futuro con nuestra marca de energía solar, limpia y renovable para un mundo más sostenible</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="benefisit-section">
                 <div className='benefisits d-flex'>
                     <div className='container-title content d-flex'>
-                        <h1>BENEFICIOS</h1>
+                        <h1>BENEFICIOS DE LA ENERGIA SOLAR</h1>
                     </div>
                     <div className='cards'>
                         <Card

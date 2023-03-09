@@ -150,7 +150,7 @@
     text-align: center;
 }
 
-.banners button, input, select, textarea
+.banners input, select, textarea
 {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     color: #90b0bf;
@@ -167,4 +167,24 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.section-store
+{
+    display: flex;
+    z-index: 500;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0px;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5 ease;
+}
+
+.store-active
+{
+    visibility: visible;
 }

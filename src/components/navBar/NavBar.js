@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom'
 import { Botton } from '../botton/Botton';
 import { Information } from '../information/Information';
@@ -5,24 +6,36 @@ import './navBar.css'
 
 export default function NavBar()
 {
-    
+    const [changeColorButton,changeColorButtonFunct] = useState(false);
+    const [changeColorButton2,changeColorButtonFunct2] = useState(false);
+    const [changeColorButton3,changeColorButtonFunct3] = useState(false);
+    const [changeColorButton4,changeColorButtonFunct4] = useState(false);
+    const [changeColorButton5,changeColorButtonFunct5] = useState(false);
+
     window.addEventListener('scroll',()=>
     {
         const navBar = document.querySelector('.navBar');
         const topNavBar = navBar.getBoundingClientRect().top;
-        const windowSize = window.innerHeight;
-
-        console.log(topNavBar + " " + windowSize);
-            
+        
         if(topNavBar == 0)
         {
             navBar.classList.add('navBarIsDown');
+            // changeColorButtonFunct(true);
+            // changeColorButtonFunct2(true);
+            // changeColorButtonFunct3(true);
+            // changeColorButtonFunct4(true);
+            // changeColorButtonFunct5(true);
         }
         else
         {
             navBar.classList.remove('navBarIsDown');
+            // changeColorButtonFunct(false);
+            // changeColorButtonFunct2(false);
+            // changeColorButtonFunct3(false);
+            // changeColorButtonFunct4(false);
+            // changeColorButtonFunct5(false);
         }
-    })
+    });
 
     return(
         <div className="main-div">
@@ -63,21 +76,31 @@ export default function NavBar()
                         <Link to="/">
                             <Botton 
                                 imageBotton = 'inicio'
+                                // changeStyle = {changeColorButton}
                             />
                         </Link>
                         <Link to="/products">
                             <Botton 
                                 imageBotton = 'productos'
+                                // changeStyle = {changeColorButton2}
                             />
                         </Link>
                         <Link to="/services">
                             <Botton 
                                 imageBotton = 'servicios'
+                                // changeStyle = {changeColorButton3}
+                            />
+                        </Link>
+                        <Link to="/blog">
+                            <Botton 
+                                imageBotton = 'blog'
+                                // changeStyle = {changeColorButton4}
                             />
                         </Link>
                         <Link to="/contact">
                             <Botton 
                                 imageBotton = 'contactenos'
+                                // changeStyle = {changeColorButton5}
                             />
                         </Link>
                     </div>
